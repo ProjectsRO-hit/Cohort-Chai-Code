@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #000000;
+            background-color: #100f0f;
         }
 
         header p {
@@ -22,13 +22,12 @@
             font-family: cursive;
             width: 200px;
             margin: auto;
-            /* Center the paragraph */
         }
 
         form {
-            /* width: 250px; */
+            width: 250px;
             padding: 5px;
-            margin: 30px;
+            margin: 30px auto; /* Center the form */
             background-color: rgb(231, 101, 101);
             border: 2px solid aqua;
             border-radius: 5px;
@@ -51,14 +50,24 @@
             </label>
 
             <label for="colour">Colour:
-                <select name="colour" id="colour" name="colour">
+                <select name="colour" id="colour">
                     <option value="Red">Red</option>
                     <option value="Green">Green</option>
                     <option value="Blue">Blue</option>
                     <option value="Cyan">Cyan</option>
+                </select><br><br>
             </label>
+
+            <input type="submit" value="Submit">
         </form>
-    </section>Blue
+    </section>
+    <h1>Video Example</h1>
+    <video width="640" height="360" controls autoplay poster="path/to/poster.jpg">
+        <source src="path/to/video.mp4" type="video/mp4">
+        <source src="path/to/video.webm" type="video/webm">
+        <track label="English" kind="subtitles" srclang="en" src="path/to/subtitles.vtt" default>
+        Your browser does not support the video tag.
+    </video>
 </body>
 
 </html>

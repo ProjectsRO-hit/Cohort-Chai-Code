@@ -4,7 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 8</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: #333;
+        color: white;
+      }
+      
+      #nav {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+      }
+      .section {
+        display: flex;
+        flex-direction: row-reverse; /* This will reverse the flex items */
+        margin-top: 20px;
+      }
+      
+      #ad{
+        background-color: #dc3838;
+        color: white;
+        padding: 15px;
+        margin-left: px; /* Optional: adds some space between ad and content */
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -18,20 +52,20 @@
         </div>
       </div>
     </header>
-    <section>
+    <section class="section">
       <div id="body">
         <p>
-          Welcome to the webisite. Lorem ipsum dolor sit amet consectetur
+          Welcome to the website. Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Iure necessitatibus eveniet praesentium fuga ipsam
           ab optio ullam nam cum ea dolores eos accusamus, excepturi nulla.
           Cupiditate eius temporibus fuga incidunt, earum quos sit quisquam
           voluptatem veritatis quod hic magnam ducimus, nulla explicabo sint?
           Voluptates, est.
         </p>
-        <article>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sit.
-        </article>
       </div>
+      <article id="ad">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sit.
+      </article>
     </section>
   </body>
 </html>
